@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#363A43"
+            android:text="What country does this flag belong to?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_image_flag"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Quiz Image"
+            android:src="@drawable/ic_flag_of_argentina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           android:layout_marginTop="16dp">
+
+           <ProgressBar
+               android:id="@+id/progress_bar"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:indeterminate="false"
+               style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+               android:max="10"
+               android:minHeight="50dp"
+               android:progress="4"/>
+
+           <TextView
+               android:id="@+id/tv_progress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="15dp"
+               android:textSize="14sp"
+               android:text="0/10"
+               android:gravity="center"/>
+
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/default_option_border_bg"
+            android:text="Nigeria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/default_option_border_bg"
+            android:text="Nigeria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/default_option_border_bg"
+            android:text="Algeria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/default_option_border_bg"
+            android:text="Nigeria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Submit"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
